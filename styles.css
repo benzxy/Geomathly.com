@@ -1,1 +1,78 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background like Twitter */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* Video Feed Container */
+.video-feed {
+  width: 100%;
+  max-width: 900px; /* Makes everything more compact */
+}
+
+/* Twitter-style video post */
+.video-post {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 22px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Header with Profile Picture */
+.video-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Video Description */
+.video-description {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+/* Hashtags */
+.video-description a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+/* Smaller Video Player */
+.video-player {
+  width: 100%;
+  max-height: 470px; /* Adjust video height */
+  border-radius: 5px;
+  outline: none;
+  background-color: #1c1c1c;
+}
+
+/* Video Controls */
+.video-player::-webkit-media-controls-panel {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0 0 12px 12px;
+}
+
+.video-player::-webkit-media-controls-play-button,
+.video-player::-webkit-media-controls-volume-slider {
+  filter: invert(1);
+}
+
+/* Engagement (Like, Retweet, Views) */
+.engagement {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
